@@ -12,7 +12,7 @@ public class DataGenerator {
         if (StringUtils.isAlphaSpace(name)) {
             return name;
         } else {
-            return getValidName(); // Рекурсивный вызов, если имя не соответствует требованиям
+            return getValidName();
         }
     }
 

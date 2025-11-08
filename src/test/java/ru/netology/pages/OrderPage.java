@@ -12,13 +12,11 @@ public class OrderPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    // Поля формы
     private By nameField = By.cssSelector("[data-test-id='name'] input");
     private By phoneField = By.cssSelector("[data-test-id='phone'] input");
     private By agreementCheckbox = By.cssSelector("[data-test-id='agreement'] .checkbox__box");
     private By continueButton = By.cssSelector("button.button");
 
-    // Сообщение об успешной отправке (по тексту, а не по классу!)
     private By successMessage = By.xpath("//*[contains(text(),'Ваша заявка успешно отправлена')]");
 
     public OrderPage(WebDriver driver) {
